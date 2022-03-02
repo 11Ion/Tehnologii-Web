@@ -1,0 +1,88 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+background: url(Resources/Index/fon.gif);
+width: 97vh;
+}
+
+
+
+.logo {
+   cursor: pointer;
+     margin-top: 1vh;
+   margin-left: 6vw;
+
+}
+
+
+nav {
+   width: 40vw;
+   height: 8vh;
+   border-bottom: solid 1px #5EB3FF;
+   font-size: 20px;
+   margin-left: 30vh;
+   margin-top: -13vh;
+}
+
+
+a{
+   text-decoration: none;
+   color: white;
+   text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff;
+   text-align: center;
+   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+}
+ 
+ li {
+   display: inline-block;
+    border-spacing: 10vh;
+     padding: 12px 50px;
+}
+ul li:hover {
+   color: white;
+   transition: 0.3s;
+}
+.image{
+cursor: pointer;	
+transition: 500ms;
+margin-top: 13vh;
+margin-left: 50vh;
+}
+
+.image:hover{  
+	transition: 500ms;
+	  transform: scale(1.15) rotate(3deg);
+}
+
+.button {
+
+	width: 20vh;
+  background-color: #0033FF;
+  border-radius: 100px;
+  box-shadow:  #099FFF  0 -25px 18px -14px inset,#00FFFF 0 1px 2px;
+  color: white;
+  cursor: pointer;	
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  transition: 400ms;
+  font-size: 18px;
+}
+
+.button:hover {
+  box-shadow: #00FFFF  0 -25px 18px -14px inset,#00FFFF 0 1px 2px,#00FFFF 0 5px 8px;
+  transform: scale(1.05) rotate(-0.5deg);
+}
+ 
+.position {
+	margin-top: -70vh;
+	margin-left: 160vh;
+}
+
