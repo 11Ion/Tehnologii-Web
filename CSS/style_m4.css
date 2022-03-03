@@ -17,7 +17,7 @@ body{
 	transform: scale(1.05) ;
 }
 nav {
-	background: url(Resources/Modeles/M4/m4.jpg);
+	background: url(../Resources/Modeles/M4/m4.jpg);
 	width: 98.9vw;
 	height: 100vh;
 	margin-top: -30vh ;
@@ -47,7 +47,7 @@ a{
 }
 .img2 {
 	margin-left:-2vh;
-	background: url(Resources/Modeles/M4/mm4.jpg);
+	background: url(../Resources/Modeles/M4/mm4.jpg);
 	width: 99.3vw;
 	height: 100vh;
 }

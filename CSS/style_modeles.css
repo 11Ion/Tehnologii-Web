@@ -5,8 +5,7 @@
 
 
 body{
-background: url(Resources/Index/fon.gif);
-width: 97vh;
+background: url(../Resources/Index/fon.gif);
 }
 
 
@@ -15,7 +14,6 @@ width: 97vh;
    cursor: pointer;
      margin-top: 1vh;
    margin-left: 6vw;
-
 }
 
 
@@ -46,26 +44,55 @@ ul li:hover {
    color: white;
    transition: 0.3s;
 }
-.image{
-cursor: pointer;	
-transition: 500ms;
-margin-top: 13vh;
-margin-left: 50vh;
-}
 
-.image:hover{  
-	transition: 500ms;
-	  transform: scale(1.15) rotate(3deg);
+.ul{
+   display: inline-block; 
+   margin-top: 15vh;
+   margin-left: -3vw;
+   width: 210vh;
+}
+.image1:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.image2:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.image3:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.image4:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.image5:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.image6:hover{
+   transform: scale(1.05);
+   transition: 500ms;
+   cursor: pointer;
+}
+.images{
+
 }
 
 .button {
 
-	width: 20vh;
+   width: 20vh;
   background-color: #0033FF;
   border-radius: 100px;
   box-shadow:  #099FFF  0 -25px 18px -14px inset,#00FFFF 0 1px 2px;
   color: white;
-  cursor: pointer;	
+  cursor: pointer;   
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
   padding: 10px 50px;
@@ -82,7 +109,7 @@ margin-left: 50vh;
 }
  
 .position {
-	margin-top: -70vh;
-	margin-left: 160vh;
+   margin-top: -201vh;
+   margin-left: 180vh;
 }
 
