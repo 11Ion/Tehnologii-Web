@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <title> Bmw x5 </title>
+ <meta charset="UTF-8">  
+<link rel="apple-touch-icon" sizes="180x180" href="../Resources/Icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../Resources/Icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../Resources/Icon/favicon-16x16.png">
+<link rel="stylesheet" type="text/css" href="../CSS/style_x5.css">
+</head>
+<body>
+   <div class="logo"> 
+      <a href="../index.php"> 
+         <img src="../Resources\Icon\logo.png" alt="Logo" width="70" height="70"> 
+      </a> 
+   </div>
+   <div class="back">
+      <a href="../PHP/modeles.php">
+         <img src="../Resources\Icon\back.png" alt="back" width="60" height="60">
+      </a>
+   </div>
+<nav>  
+</nav>
+   <div class="text" >  <h1><center> BMW X5 </center> <br></h1>
+    <p> Modelele BMW X5 M îşi manifestă autoritatea prin proporţiile puternice, designul exclusiv M şi performanţele remarcabile. Descoperă modelul sportiv extrovertit SAV: BMW X5 M50i impresionează prin combinaţia unică de performanţă, confort şi eficienţă. BMW X5 M cu xDrive M inspiră printr-un interior luxos şi dinamică de condus definită de ADN-ul motorsport. O experienţă de condus încărcată de adrenalină care este intensificată în şi mai puternicul şi exuberantul BMW X5 M Competition cu xDrive M.  <br><br>
+   Performanţa extraordinară şi dinamica noilor BMW X5 M Competition şi BMW X5 M se bazează pe un set de trenuri de rulare şi tehnologii de suspensie de ultimă generaţie inspirate de sporturile cu motor. Indiferent că te plimbi relaxat sau mergi cu viteză pe un circuit, precizia şi agilitatea remarcabilă definesc în mod constant legendara senzaţie de condus M.<br><br>   
+ 
+</p> </div>
+
+<div class="img2"> 
+</div>
+   </body> 
+      </html>
+
+ 
