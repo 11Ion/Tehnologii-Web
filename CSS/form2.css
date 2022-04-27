@@ -2,14 +2,15 @@
  
  
  body{
- background: #2d2d2d;
+
+ background: url('../Resources/Icon/fon.webp');
  }
  
  .menu{
-    margin-left: -1vh;
- margin-top: -20vh;
- width: 213vh;
- height: 12vh;
+    margin-left: -2vh;
+ margin-top: -2vh;
+ width: 213.7vh;
+ height: 11.5vh;
  position: fixed;
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
@@ -49,58 +50,97 @@
     transition: 0.3s;
  }
 
- .form {
-     margin-top: 20vh;
-   
+
+
+ .form1 {
+    display:block;
+   border-radius:50px;
+    transform: scale(0.8);
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 40vh;
+    width: 130vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);   
  }
-input {
-   padding:10px;
- border-radius:10px;
- font-family:inherit;
- font-size: inherit;
-  
+.image{
+   margin-top: 2vh;
+   margin-left: 55vh;
+}
+.eticheta{
+   font-family: system-ui;
+   font-size: 25px;
+   color: white;
+   margin-left: -5vh;
+   text-align: center;
+}
+.text {
+   margin-left:40vh;
+   margin-top: 5vh;
+   color: white;
+   font-family: system-ui;
+   font-size: 17px;
+}
+.username{
+   margin-left: 13.5vh;
+   padding:5px;
+   border-radius:8px
+}
+.email{
+   margin-left: 18.4vh;
+   padding:5px;
+   border-radius:8px
+}
+.password{
+   margin-left: 14vh;
+   padding:5px;
+   border-radius:8px
+}
+.confirm{
+   margin-left: 5vh;
+   padding:5px;
+   border-radius:8px
 }
 .submit {
-   background-color: #4CAF50; /* Green */
- border: none;
- color: white;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 16px;
- }
- p {
+   font-size: 15px;
+   margin-top: 5vh;
+   font-family: system-ui;
+   font-weight: bold;
+   width: 5cm;
+   margin-left: 56vh;
+   color: white;
+   background-color: #26378F;
+   padding:15px;
+   border-radius:50px
+}
+
+.error{
+   color: red;
+   font-family: system-ui;
+}
+.green{
+   color:green;
+   font-family: system-ui;
+}
+.form2 {
+   display: none;
+   border-radius:50px;  
+   transform: scale(0.8);
+   position: absolute;
+   margin-top: 10vh;
+   margin-left: 40vh;
+   width: 130vh;
+   height: 80vh;
+   background: rgba(0, 0, 0, 0.9);   
+}
+.image2{
+   margin-top: 15vh;
+   margin-left: 55vh;
+   }
+.text3{
+      margin-left:30vh;
+     margin-top: 15vh;
      color: white;
-     font-size: 18px;
- }
- .rosu {
-     color:red;
- }
- h2 {
-    color:white;
-    font-size: 25px;
- }
- .form {
-    color: aliceblue;
-    text-align: center;
-    width: 120vh;
-     height: 80vh;
-     background: black;
-     margin-left: 40vh;
- }
-.value {
-color: darkgoldenrod;
-}
-.form2 {
-   color: aliceblue;
-   text-align: center;
-   width: 120vh;
-    height: 100vh;
-    background: black;
-    margin-left: 40vh;
-}
-.form2 {
-   margin-top: 20vh;
- 
+     font-family: system-ui;
+     font-size: 25px;
 }

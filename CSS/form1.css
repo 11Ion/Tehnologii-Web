@@ -1,90 +1,167 @@
 
-  
-  body{
-  background: #2d2d2d;
-  }
-  
-  .menu{
-     margin-left: -1vh;
-  margin-top: -20vh;
-  width: 213vh;
-  height: 12vh;
-  position: fixed;
-   background: rgba(0, 0, 0, 0.8);
-   z-index: 999;
-  
-  }
-  
-  .logo {
-     cursor: pointer;
-       margin-top: 1vh;
-     margin-left: 6vw;
-  }
-  
-  
-  nav {
-     width: 70vw;
-     height: 8vh;
-     font-size: 20px;
-     margin-left: 30vh;
-     margin-top: -13vh;
-  }
-  
-  
-  a{
-     text-decoration: none;
-     color: white;
-     text-align: center;
-     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  }
-   
-   li {
-     display: inline-block;
-      border-spacing: 10vh;
-       padding: 12px 50px;
-  }
-  ul li:hover {
-     color: white;
-     transition: 0.3s;
-  }
+ 
+ 
+ body{
 
-  .form {
-      margin-top: 20vh;
-    
-  }
-input {
-    padding:10px;
-  border-radius:10px;
-  font-family:inherit;
-  font-size: inherit;
+   background: url('../Resources/Icon/fon.webp');
+   }
    
-}
-.submit {
-    background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  }
-  p {
-      color: white;
+   .menu{
+      margin-left: -2vh;
+   margin-top: -2vh;
+   width: 213.7vh;
+   height: 11.5vh;
+   position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+   
+   }
+   
+   .logo {
+      cursor: pointer;
+        margin-top: 1vh;
+      margin-left: 6vw;
+   }
+   
+   
+   nav {
+      width: 70vw;
+      height: 8vh;
       font-size: 20px;
-  }
-  .rosu {
-      color:red;
-  }
-  h2 {
-     color:white;
-     font-size: 25px;
-  }
-  .form {
-     transform: scale(0.9);
-     text-align: center;
-     width: 120vh;
-      height: 120vh;
-      background: black;
+      margin-left: 30vh;
+      margin-top: -13vh;
+   }
+   
+   
+   a{
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+   }
+    
+    li {
+      display: inline-block;
+       border-spacing: 10vh;
+        padding: 12px 50px;
+   }
+   ul li:hover {
+      color: white;
+      transition: 0.3s;
+   }
+  
+  
+  
+   .form1 {
+      display: block;
+      border-radius:50px;  
+      transform: scale(0.8);
+      position: absolute;
+      margin-top: 2vh;
       margin-left: 40vh;
+      width: 130vh;
+      height: 104vh;
+      background: rgba(0, 0, 0, 0.9);   
+   }
+  .image{
+     margin-top: 2vh;
+     margin-left: 55vh;
   }
+  .eticheta{
+     font-family: system-ui;
+     font-size: 25px;
+     color: white;
+     margin-left: -2vh;
+     text-align: center;
+  }
+  .text {
+     margin-left:46vh;
+     margin-top: 5vh;
+     color: white;
+     font-family: system-ui;
+     font-size: 17px;
+  }
+  .name{
+     margin-left: 5vh;
+     padding:5px;
+     border-radius:8px
+  }
+   .radio{
+      margin-left: 46vh;
+      font-family: system-ui;
+      color: white;
+   }
+   textarea{
+      border-radius:10px;  
+      margin-left: 46vh;
+   }
+  .submit {
+     font-size: 15px;
+     margin-top: 5vh;
+     font-family: system-ui;
+     font-weight: bold;
+     width: 5cm;
+     margin-left: 54vh;
+     color: white;
+     background-color: #26378F;
+     padding:15px;
+     border-radius:50px
+  }
+  
+.image1{
+   margin-top: 2vh;
+   margin-left: 30vh;
+}
+.text2 {
+   margin-top: 10vh;
+   font-size: 25px;
+   text-align: center;
+   font-family: system-ui;
+   color: white;
+}
+.green{
+   font-family: system-ui;
+   color: green;
+}
+.error   {
+   font-family: system-ui;
+   color: red;
+}
+.gray {
+   color: gray;
+   font-family: system-ui;
+}
+.form2 {
+   display: none;
+   border-radius:50px;  
+   transform: scale(0.8);
+   position: absolute;
+   margin-top: 10vh;
+   margin-left: 40vh;
+   width: 130vh;
+   height: 80vh;
+   background: rgba(0, 0, 0, 0.9);   
+}
+.image2{
+   margin-top: 5vh;
+   margin-left: 55vh;
+   }
+.text3{
+       margin-left:20vh;
+     margin-top: 5vh;
+     color: white;
+     font-family: system-ui;
+     font-size: 25px;
+}
+.gray2{
+   font-family: system-ui;
+   font-size: 25px;
+   color:gray;
+}
+.red{
+   color: red;
+   font-weight: bold;
+   font-size: 25px;
+   font-family: system-ui;
+
+}

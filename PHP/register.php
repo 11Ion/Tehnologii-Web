@@ -1,132 +1,152 @@
 <!DOCTYPE html>
 <html>
-<head> 
- <title> Login </title>
- <meta charset="UTF-8">  
-<link rel="apple-touch-icon" sizes="180x180" href="../Resources/Icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../Resources/Icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../Resources/Icon/favicon-16x16.png">
-<link rel="stylesheet" type="text/css" href="../CSS/form2.css">
-</head>
-<body>
-<div class="menu">
-      <div class="logo"> 
-         <a href="..\index.php"> 
-            <img src="..\Resources\Icon\logo.png" alt="Logo" width="70" height="70"> 
-      </a> 
-</div>
-<nav>   
-   <ul>
-      <li>
-         <a href="..\PHP\modeles.php"> Modeles 
-         </a>
-      </li>
-      <li>
-         <a href="..\PHP\news.php"> Search 
-         </a>
-      </li>
-      <li>
-         <a href="..\PHP\contacts.php"> Contacts
-         </a> 
-      </li>
-      <li>
-                     <a href="PHP\report.php"> Report
-                  </a> 
+   <head>
+      <title> Register
+      </title>
+      <meta charset="UTF-8">
+      <link rel="apple-touch-icon" sizes="180x180" href="../Resources/Icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../Resources/Icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../Resources/Icon/favicon-16x16.png">
+      <link rel="stylesheet" type="text/css" href="../CSS/form2.css">
+   </head>
+   <body>
+      <div class="menu">
+         <div class="logo">
+            <a href="..\index.php">
+            <img src="..\Resources\Icon\logo.png" alt="Logo" width="70" height="70">
+            </a>
+         </div>
+         <nav>
+            <ul>
+               <li>
+                  <a href="..\PHP\modeles.php"> Modeles 
+                  </a>
                </li>
                <li>
-                     <a href="PHP\register.php"> Register
-                  </a> 
+                  <a href="..\PHP\news.php"> Search 
+                  </a>
                </li>
                <li>
-                     <a href="PHP\test.php"> Test
-                  </a> 
+                  <a href="..\PHP\contacts.php"> Contacts
+                  </a>
                </li>
-               
-      </ul> 
-   </nav>
-</div>
-
-<?php
-
-$pass = $confirm_pass = $email = "";
-$Errpass = $Errconfirm_pass = $Erremail = "";
-$succesemail = $succesconfirm = $succespass = "";
-
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["pass"])) {
-    $Errpass = "*Spatiul este gol";
-  } else {
-    $pass = test_input($_POST["pass"]);
-    if (!preg_match("/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,10}$/",$pass)) {
-      $Errpass = "*Parola slaba";    
-    }
-    else{
-      $succespass = "Succesfull";
-    }
-
-  }
-  if (empty($_POST["confirm_pass"])) {
-  $Errconfirm_pass = "*Spatiul este gol";
-  }
-  if ($_POST["pass"] === $_POST["confirm_pass"]) {
-    $succesconfirm = "Parolele coincid";
- }
-
- else {
-  $Errconfirm_pass = "*Parolele trebuie sa coincida";
- }
- 
-
-  
-  if (empty($_POST["email"])) {
-    $Erremail = "*Spatiul este gol";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $Erremail = "*Introdu email corect";
-    }
-    else 
-    $succesemail = "Succesfull!";
-  }
-  
-}
-
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-  
-}
-?>
-<div class="form">
-    <br>
-<h2> Register </h2>
-<br> 
-<br>
-
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-<p>  
-  <p> E-mail: <input type="text" name="email" value="<?php echo $email;?>">  </p>
-  <p class="rosu">  <?php echo $Erremail;?> </p>
-  <p class="green">  <?php echo $succesemail;?> </p>
-  <br><br>
-  Parola: <input type="password" name="pass" value="<?php echo $pass;?>">  </p>
-  <p class="rosu">  <?php echo $Errpass;?> </p>
-  <p class="green">  <?php echo $succespass;?>      </p>
-  <br><br>
-  Comfirmă: <input type="password" name="confirm_pass" value="<?php echo $confirm_pass;?>">  </p>
-  <p class="rosu"> <?php echo $Errconfirm_pass;?> </p>
-  <p class="coincid">  <?php echo $succesconfirm;?> </p>
-  <br><br>
-  
- 
-  <input class="submit" type="submit" name="submit" value="Submit">  
-</form>
-</div>
-
-</body> 
+               <li>
+                  <a href="PHP\report.php"> Report
+                  </a>
+               </li>
+               <li>
+                  <a href="PHP\register.php"> Register
+                  </a>
+               </li>
+               <li>
+                  <a href="PHP\login.php"> Login
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <?php
+         $username = $email = $password = $confirm = "";
+         $usernameErr = $emailErr = $passwordErr = $confirmErr = "";
+         $usernameS = $emailS = $passwordS = $confirmS = "";
+         $success = "";
+         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          
+          if (empty($_POST["username"])) {
+             $usernameErr = "*";
+          }
+         else{
+           $username = test_input($_POST["username"]);
+         if (!preg_match('/^[a-z0-9]{4,12}/', $_POST['username'])){
+          $usernameErr = "*Format greșit";  
+          }
+         else{
+           $usernameS = true;
+           $username = test_input($_POST["username"]);
+         }}
+          
+         if (empty($_POST["email"])) {
+           $emailErr = "*";
+         } else {
+           $email = test_input($_POST["email"]);
+           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+             $emailErr = "*Format greșit";
+           }
+           else {
+             $emailS = true;
+             $email = "";
+           }
+         }
+         
+         if (empty($_POST["password"])) {
+           $passwordErr = "*";
+         }
+         else {
+         $password = test_input($_POST["password"]);
+         if (preg_match("/^(?=.*\d)(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{6,10}/", $_POST['password'])){
+         $password = "";
+         $passwordS = true;
+         }
+         else{
+         $passwordErr = "*Parolă prea ușoară";
+         }
+         }
+           
+         
+          
+          
+          if (empty($_POST["confirm"])) {
+           $confirmErr = "*";
+         }
+         else{
+           $confirm = test_input($_POST["confirm"]);
+         if ($_POST['password']  == $_POST['confirm'])  {
+           $confirmS = true;
+           $confirm = "";
+         }
+         else{
+         $confirmErr = "*Parolele nu coincid";
+         }
+         }
+         if ( $usernameS == true && $emailS == true && $passwordS == true && $confirmS == true ){
+         $success = '<style>.form1 { display:none;} .form2 { display:block;}</style>';
+         }
+         }
+         
+          function test_input($data) {
+             $data = trim($data);
+             $data = stripslashes($data);
+             $data = htmlspecialchars($data);
+             return $data;
+           }
+          
+         
+         ?>  
+      <div class="form2">
+         <img class="image2" src="../Resources/Icon/user.png" width="200" height="200">
+         <p class="text3"> Utilizatorul <span class="green"> <?php echo $username ?> </span> a fost înregistrat cu succes </p>
+      </div>
+      <div class="form1">
+         <img class="image" src="../Resources/Icon/user.png" width="150" height="150">
+         <p class="eticheta"> Înregistrează un cont nou 
+         <p>
+            <br>
+         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <p class="text"> Username <input class="username" type="text" name="username" value="<?php echo $username ?>">
+               <span class="error"> <?php echo $usernameErr ?> </span>
+            </p>
+            <p class="text"> Email <input class="email" type="text" name="email" value="<?php echo $email ?>">
+               <span class="error"> <?php echo $emailErr ?> </span> 
+            </p>
+            <p class="text"> Password  <input class="password" type="password" name="password" value="<?php echo $password ?>">
+               <span class="error"> <?php echo $passwordErr ?> </span> 
+            </p>
+            <p class="text"> Confirm Password   <input class="confirm" type="password" name="confirm" value="<?php echo $confirm ?>">
+               <span class="error"> <?php echo $confirmErr ?> </span> 
+            </p>
+            <?php echo $success ?>
+            <input class="submit" type="submit" name="Submit" value="Register">
+         </form>
+      </div>
+   </body>
 </html>
