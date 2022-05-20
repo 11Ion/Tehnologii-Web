@@ -1,7 +1,9 @@
-{	
+*{
 	margin: 0;
 	padding: 0;
-}
+	box-sizing: border-box;
+ }
+  
 body{
 	background:#2d2d2d ;
 	width: 90vh;
@@ -21,7 +23,7 @@ nav {
 	width: 98.9vw;
 	height: 100vh;
 	margin-top: -30vh ;
-	margin-left: -1.2vh;
+	margin-left: 0.05vh;
 }
 
 .logo {
@@ -46,7 +48,7 @@ a{
 	font-family: Optima, sans-serif	;
 }
 .img2 {
-	margin-left:-2vh;
+	margin-left:-1vh;
 	background: url(../Resources/Modeles/M8/mm8.jpg);
 	width: 99.3vw;
 	height: 100vh;

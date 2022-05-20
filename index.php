@@ -50,11 +50,7 @@
                   </a>
         </li>
         <li>
-          <a href="PHP\contacts.php"> Contacts
-                  </a>
-        </li>
-        <li>
-          <a href="PHP\report.php"> Report
+          <a href="PHP\donate.php"> Donate
                   </a>
         </li>
         <li>
@@ -62,10 +58,9 @@
                   </a>
         </li>
         <li>
-          <a href="PHP\login.php"> Login
+          <a href="PHP\contact.php"> Contact
                   </a>
         </li>
-
       </ul>
     </nav>
   </div>

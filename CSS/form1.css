@@ -1,4 +1,8 @@
-
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
  
  
  body{
@@ -10,7 +14,7 @@
       margin-left: -2vh;
    margin-top: -2vh;
    width: 213.7vh;
-   height: 11.5vh;
+   height: 12.5vh;
    position: fixed;
     background: rgba(0, 0, 0, 0.8);
     z-index: 999;
@@ -19,7 +23,7 @@
    
    .logo {
       cursor: pointer;
-        margin-top: 1vh;
+        margin-top: 2vh;
       margin-left: 6vw;
    }
    
@@ -29,7 +33,7 @@
       height: 8vh;
       font-size: 20px;
       margin-left: 30vh;
-      margin-top: -13vh;
+      margin-top: -10vh;
    }
    
    
@@ -50,142 +54,59 @@
       transition: 0.3s;
    }
   
-  
-  
-   .form1 {
-      display: block;
-      border-radius:50px;  
-      transform: scale(0.8);
-      position: absolute;
-      margin-top: 4vh;
-      margin-left: 40vh;
-      width: 130vh;
-      height: 104vh;
-      background: rgba(0, 0, 0, 0.9);   
+   .form {
+      transform: scale(0.9);
+      border-radius:50px;
+       position: absolute;
+       margin-top: -1vh;
+       margin-left: 55vh;
+       width: 100vh;
+       height: 96vh;
+       background: rgba(0, 0, 0, 0.9);   
+    }
+    .inputform{
+       margin-top: 1vh;
+      margin-left: 38vh;
+      padding:15px;
+      border-radius:8px
+   
    }
-  .image{
-     margin-top: 2vh;
-     margin-left: 55vh;
-  }
-  .eticheta{
-     font-family: system-ui;
-     font-size: 25px;
-     color: white;
-     margin-left: -2vh;
-     text-align: center;
-  }
-  .text {
-     margin-left:46vh;
-     margin-top: 5vh;
-     color: white;
-     font-family: system-ui;
-     font-size: 17px;
-  }
-  .name{
-     margin-left: 5vh;
-     padding:5px;
-     border-radius:8px
-  }
-   .radio{
-      margin-left: 46vh;
+   .error_form{
+      margin-left:39vh;
+      width:30vh;
+      font-size: 15px;
+      color: #cc0033;
+   }
+   h1{
+      margin-top: 50vh;
+      margin-left: 100vh;
+   }
+   .donate{
+      margin-top: 6vh;
+      margin-left:43vh;
+      height: 10vh;
+      width: 20vh;
+      }
+   .donate1{
+      margin-left: -2vh;
+      height:9vh;
+      font-family: Fantasy;
+      font-size: 25px;
+      text-align: center;
+      color:white;
+   }
+   .submit {
+      font-size: 14px;
+      margin-top: 1vh;
       font-family: system-ui;
+      font-weight: bold;
+      width: 3cm;
+      margin-left: 43vh;
       color: white;
+      background-color: #26378F;
+      padding:10px;
+      border-radius:20px
    }
-   textarea{
-      border-radius:10px;  
-      margin-left: 46vh;
+   .php_error{
+      color:green;
    }
-  .submit {
-     font-size: 15px;
-     margin-top: 5vh;
-     font-family: system-ui;
-     font-weight: bold;
-     width: 5cm;
-     margin-left: 54vh;
-     color: white;
-     background-color: #26378F;
-     padding:15px;
-     border-radius:50px
-  }
-  
-.image1{
-   margin-top: 2vh;
-   margin-left: 30vh;
-}
-.text2 {
-   margin-top: 10vh;
-   font-size: 25px;
-   text-align: center;
-   font-family: system-ui;
-   color: white;
-}
-.green{
-   font-family: system-ui;
-   color: green;
-}
-.error   {
-   font-family: system-ui;
-   color: red;
-}
-.gray {
-   color: gray;
-   font-family: system-ui;
-}
-.form2 {
-   display: none;
-   border-radius:50px;  
-   transform: scale(0.8);
-   position: absolute;
-   margin-top: 10vh;
-   margin-left: 45vh;
-   width: 120vh;
-   height: 80vh;
-   background: rgba(0, 0, 0, 0.9);   
-}
-.image2{
-   margin-top: 5vh;
-   margin-left: 55vh;
-   }
-.text3{
-       margin-left:20vh;
-     margin-top: 5vh;
-     color: white;
-     font-family: system-ui;
-     font-size: 25px;
-}
-.gray2{
-   font-family: system-ui;
-   font-size: 25px;
-   color:gray;
-}
-.red{
-   color: red;
-   font-weight: bold;
-   font-size: 25px;
-   font-family: system-ui;
-
-}
-.errorr{
-   display: none;
-   margin-top: -0.4vh;
-   height: 4vh;
-   width: 220vh;
-   background:  rgba(207,12,12,1) ;     
-}
-.redalert{  
-   margin-left: 80vh;
-   width: 60vh;
-   height: 7vh;
-   font-size: 20px;
-   color: #ffffff;
-}
-.link{
-   background-color: #2437a6; 
-   border: none;
-   color: white;
-   padding: 4px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px; 
-}

@@ -1,6 +1,7 @@
 *{
   margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
   margin: 0px;
@@ -153,7 +154,7 @@ footer a {
 
 nav {
    position: relative; 
-   margin-left: -42vh;
+   margin-left: -36vh;
    margin-top: 1vh;
 
 }

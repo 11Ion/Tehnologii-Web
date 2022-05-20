@@ -6,13 +6,13 @@ if(!isset($success)){
 <!DOCTYPE html>
 <html>
    <head>
-      <title> Register
+      <title> Donate
       </title>
       <meta charset="UTF-8">
       <link rel="apple-touch-icon" sizes="180x180" href="../Resources/Icon/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../Resources/Icon/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="../Resources/Icon/favicon-16x16.png">
-      <link rel="stylesheet" type="text/css" href="../CSS/form2.css">
+      <link rel="stylesheet" type="text/css" href="../CSS/form1.css">
    </head>
    <body>
       <div class="menu">
@@ -21,7 +21,7 @@ if(!isset($success)){
             <img src="..\Resources\Icon\logo.png" alt="Logo" width="70" height="70">
             </a>
          </div>
-         <nav>
+        <nav>
       <ul>
         <li>
           <a href="Modeles.php"> Modeles 
@@ -45,24 +45,24 @@ if(!isset($success)){
         </li>
       </ul>
     </nav>
-      </div>
-
-<div class="form">
-<div class="register">
-	<p class="register1"> Register </p>
+    <div class="form">
+   <div class="donate">
+	<p class="donate1"> Donate </p>
 	</div>	
-<form action="register-validation.php" id="form" method="post">
-<input class="inputform" type="text" id="fname" name="fname" placeholder="Nume"><br><br>
+<form action="donate-validation.php" id="form" method="post">
+<input  class="inputform" type="text" id="fname" name="fname" placeholder="Numele"><br><br>
 <p class="error_form" id="fname_error_message"></p>
-<input class="inputform" type="text" id="sname" name="sname" placeholder="Prenume"><br><br>
+<input  class="inputform" type="text" id="sname" name="sname" placeholder="Prenumele"><br><br>
 <p class="error_form" id="sname_error_message"></p>
-<input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
+<input  class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
 <p class="error_form" id="email_error_message2"></p>
-<input class="inputform" type="password" id="password" name="password" placeholder="Parola"><br><br>
-<p class="error_form" id="password_error_message"></p>
-<input class="inputform" type="password" id="password2" name="password2" placeholder="Repetă parola"><br><br>
-<p class="error_form" id="password_error_message2"></p>
-<input class="submit" type="submit" id="submit" value="Send" name="submit">
+<input  class="inputform" type="number" id="phone" name="phone" placeholder="Telefon (373)"><br><br>
+<p class="error_form" id="phone_error_message"></p>
+<input  class="inputform" type="text" id="address" name="address" placeholder="Adresă"><br><br>
+<p class="error_form" id="address_error_message"></p>
+<input  class="inputform" type="number" id="donation_sum" name="donation_sum" placeholder="Suma donației"><br><br>
+<p class="error_form" id="donation_sum_error_message"></p>
+<input  class="submit" type="submit" id="submit" value="Send" name="submit">
 <?php if(isset($fname_error)){ ?>
     <p class="php_error"> <?php echo $fname_error ?> </p>
 <?php } ?>
@@ -72,13 +72,16 @@ if(!isset($success)){
 <?php if(isset($email_error)){ ?>
     <p class="php_error"> <?php echo $email_error ?> </p>
 <?php } ?>
-<?php if(isset($password_error)){ ?>
-    <p class="php_error"> <?php echo $password_error ?> </p>
+<?php if(isset($phone_error)){ ?>
+    <p class="php_error"> <?php echo $phone_error ?> </p>
 <?php } ?>
-<?php if(isset($password_error2)){ ?>
-    <p class="php_error"> <?php echo $password_error2 ?> </p>
+<?php if(isset($address_error)){ ?>
+    <p class="php_error"> <?php echo $address_error ?> </p>
 <?php } ?>
-<?php if(!isset($fname_error) && !isset($semail_error) && !isset($email_error) && !isset($password_error) && !isset($password_error2)){ ?>
+<?php if(isset($donation_sum_error)){ ?>
+    <p class="php_error"> <?php echo $donation_sum_error ?> </p>
+<?php } ?>
+<?php if(!isset($fname_error) && !isset($sname_error) && !isset($email_error) && !isset($phone_error) && !isset($donation_sum_error) && !isset($address_error)){ ?>
     <p class="php_error"> <?php echo $success ?> </p>
 <?php } ?>
 </form>
@@ -88,6 +91,6 @@ if(!isset($success)){
 </div>
 </header>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../JS/register_validation.js"></script>
+<script src="../JS/donate-validation.js"></script>
 </body>
 </html>

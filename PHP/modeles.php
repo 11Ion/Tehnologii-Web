@@ -22,27 +22,23 @@
     <nav>
       <ul>
         <li>
-          <a href="..\PHP\modeles.php"> Modeles 
-         </a>
-        </li>
-        <li>
-          <a href="..\PHP\news.php"> Search 
-         </a>
-        </li>
-        <li>
-          <a href="..\PHP\contacts.php"> Contacts
-         </a>
-        </li>
-        <li>
-          <a href="PHP\report.php"> Report
+          <a href="Modeles.php"> Modeles 
                   </a>
         </li>
         <li>
-          <a href="PHP\register.php"> Register
+          <a href="news.php"> Search 
                   </a>
         </li>
         <li>
-          <a href="PHP\login.php"> Login
+          <a href="donate.php"> Donate
+                  </a>
+        </li>
+        <li>
+          <a href="register.php"> Register
+                  </a>
+        </li>
+        <li>
+          <a href="contact.php"> Contact
                   </a>
         </li>
       </ul>

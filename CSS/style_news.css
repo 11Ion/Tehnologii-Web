@@ -1,4 +1,9 @@
-
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
 
 body{
    height: 200vh;
@@ -9,16 +14,15 @@ background: #2d2d2d;
 margin-left: -1vh;
 margin-top: -2.1vh;
 width: 214vh;
-height: 12vh;
+height: 13vh;
 position: fixed;
  background: rgba(0, 0, 0, 0.8);
  z-index: 999;
-zz
 }
 
 .logo {
-   cursor: pointer;
-   margin-top: 1vh;
+	cursor: pointer;
+   margin-top: 2.5vh;
    margin-left: 6vw;
 }
 
@@ -28,7 +32,7 @@ nav {
    height: 8vh;
    font-size: 20px;
    margin-left: 30vh;
-   margin-top: -13vh;
+   margin-top: -9vh;
 }
 
 
@@ -52,19 +56,15 @@ ul li:hover {
 .search-box{
    position: fixed;
    margin-left: 20vh;
-   margin-top: 20vh;
+   margin-top: 19.5vh;
 }
 
 input{
    transform: translate(110%,-350%);
-
    height: 4vh;
    width: 80vh;
 }
 
-.btn-search{
-transform: translate(3185%,-342%);
-}
 
    
 .list{
@@ -79,7 +79,7 @@ transform: translate(3185%,-342%);
    display: none;
 }
 .list1 {   
-      transform: translate(0%,50%);
+      transform: translate(10%,50%);
    background: black;
    width: 180vh;
    height: 30vh;

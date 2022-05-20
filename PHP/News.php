@@ -18,7 +18,6 @@
   <div class="menu">
     <div class="news">
       <div class="search-box">
-        <button class="btn-search"> <img src="../Resources/Icon/loop.png"></button>
         <input type="text" id="mySearch" onkeyup="myFunction()" class="input-search" placeholder="Type to Search...">
       </div>
 
@@ -33,15 +32,15 @@
     <nav>
       <ul>
         <li>
-          <a href="..\PHP\modeles.php"> Modeles 
+          <a href="modeles.php"> Modeles 
          </a>
         </li>
         <li>
-          <a href="..\PHP\news.php"> Search 
+          <a href="news.php"> Search 
          </a>
         </li>
         <li>
-          <a href="..\PHP\contacts.php"> Contacts
+          <a href="donate.php"> Donate
          </a>
         </li>
       </ul>
