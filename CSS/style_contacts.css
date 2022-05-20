@@ -1,0 +1,71 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+
+
+body{
+background: #2d2d2d;
+}
+
+.menu{
+   margin-left: -1vh;
+margin-top: -40.1vh;
+width: 213vh;
+height: 12vh;
+position: fixed;
+ background: rgba(0, 0, 0, 0.8);
+ z-index: 999;
+
+}
+
+.logo {
+   cursor: pointer;
+     margin-top: 1vh;
+   margin-left: 6vw;
+}
+
+
+nav {
+   width: 70vw;
+   height: 8vh;
+   font-size: 20px;
+   margin-left: 30vh;
+   margin-top: -10vh;
+}
+
+
+a{
+   text-decoration: none;
+   color: white;
+   text-align: center;
+   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+}
+ 
+ li {
+   display: inline-block;
+    border-spacing: 10vh;
+     padding: 12px 50px;
+}
+ul li:hover {
+   color: white;
+   transition: 0.3s;
+}
+
+.contacts{
+   margin-left: 60vh;
+   margin-top: 40vh;
+   width: 75vh;
+   height: 15vh;
+   background: black;
+}
+h1{
+   margin-left: 5vh;
+   color: white;
+}
+h2{
+   margin-left: 5vh;
+   color: white;
+}

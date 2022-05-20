@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Bmw m4 </title>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Resources/Icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../Resources/Icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../Resources/Icon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="../CSS/style_m4.css">
+</head>
+
+<body>
+  <div class="logo">
+    <a href="../index.php">
+      <img src="../Resources/Icon/logo.png" alt="Logo" width="70" height="70">
+    </a>
+  </div>
+  <div class="back">
+    <a href="../PHP/modeles.php">
+      <img src="../Resources/Icon/back.png" alt="back" width="60" height="60">
+    </a>
+  </div>
+  <nav>
+  </nav>
+  <div class="text">
+    <h1><center> BMW M4</center> <br></h1>
+    <p> Fiind un instrument de șenile cu omologare rutieră și multă putere, BMW M4 GTS ar putea fi descris ca fiind radical. Cu toate acestea, acest lucru nu ar face dreptate vehiculului BMW M din 2016, care a fost limitat la 700 de unități. În schimb, coupé-ul sport ar trebui descris ca fiind „consecvent”. Aici, tehnologia de ultimă oră din sportul cu motor a fost implementată într-un vehicul care excelează atât pe circuitul de curse, cât și pe drumul de țară, cu cele mai înalte niveluri de performanță – și în același timp capabil să reziste oricărui tip. de adversar. Dar mai întâi lucrurile.
+    </p>
+  </div>
+
+  <div class="img2">
+  </div>
+</body>
+
+</html>

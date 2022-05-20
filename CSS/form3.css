@@ -1,0 +1,125 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+ 
+ body{
+
+    background: url('../Resources/Icon/fon.webp');
+    }
+    
+    .menu{
+       margin-left: -2vh;
+    margin-top: -2vh;
+    width: 213.7vh;
+    height: 12.5vh;
+    position: fixed;
+     background: rgba(0, 0, 0, 0.8);
+     z-index: 999;
+    
+    }
+    
+    .logo {
+       cursor: pointer;
+         margin-top: 2vh;
+       margin-left: 6vw;
+    }
+    
+    
+    nav {
+       width: 70vw;
+       height: 8vh;
+       font-size: 20px;
+       margin-left: 30vh;
+       margin-top: -10vh;
+    }
+    
+    
+    a{
+       text-decoration: none;
+       color: white;
+       text-align: center;
+       font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    }
+     
+     li {
+       display: inline-block;
+        border-spacing: 10vh;
+         padding: 12px 50px;
+    }
+    ul li:hover {
+       color: white;
+       transition: 0.3s;
+    }
+   
+    .form {
+      transform: scale(0.9);
+      border-radius:50px;
+       position: absolute;
+       margin-top: 12vh;
+       margin-left: 55vh;
+       width: 100vh;
+       height: 75vh;
+       background: rgba(0, 0, 0, 0.9);   
+    }
+    .inputform{
+       margin-top: 1vh;
+      margin-left: -5vh;
+      padding:15px;
+      border-radius:8px
+   
+   }
+   .error_form{
+      margin-left:-2vh;
+      width:30vh;
+      font-size: 15px;
+      color: #cc0033;
+   }
+   h1{
+      margin-top: 50vh;
+      margin-left: 100vh;
+   }
+   .contact{
+      margin-top: 6vh;
+      margin-left:43vh;
+      height: 10vh;
+      width: 20vh;
+      }
+   .contact1{
+      margin-left: -2vh;
+      height:9vh;
+      font-family: Fantasy;
+      font-size: 25px;
+      text-align: center;
+      color:white;
+   }
+   .submit {
+      font-size: 14px;
+      margin-top: 1vh;
+      font-family: system-ui;
+      font-weight: bold;
+      width: 3cm;
+      margin-left: 2vh;
+      color: white;
+      background-color: #26378F;
+      padding:10px;
+      border-radius:20px
+   }
+   .inputform1{
+      margin-top: 1vh;
+     margin-left: -5vh;
+     padding:50px;
+     width: 28vh;
+     border-radius:8px
+  
+  }
+  .php_error{
+   color:green;
+}
+.green{
+   margin-left: -10vh;
+   color:green;
+   width: 100vh;
+}
